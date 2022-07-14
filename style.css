@@ -1,0 +1,60 @@
+  .close:hover {background: #e6e6ff;}
+  .aligncenter {
+     text-align: center; 
+     vertical-align: middle;
+  }
+  .form-control{
+    /* width: 120%; */
+  }
+
+
+.container {
+    min-width: 320px;
+    max-width: 100%;
+    padding: 0 15px;
+    box-sizing: border-box;
+}
+
+table {
+   border-collapse: collapse;
+   width: 100%;
+   margin: 20px 0;
+}
+
+table td, table th {
+   padding: 10px;
+   border: 1px solid #cbbdbd;
+}
+
+tr {
+    vertical-align: middle;
+}
+
+tr:nth-child(even){
+   background-color: #f0f4c3;
+}
+
+@media (max-width: 720px) {
+
+}
+
+.container table thead {
+    display: none;
+}
+.container table tr {
+
+    display: block;
+
+}
+.container table td {
+    display: flex;
+    /* justify-content: normal;   */
+     justify-content: space-between;  
+    font-size: 14px;
+}
+.container table td::before {
+    content: attr(data-label);
+    font-weight: bold;
+    margin-right: 20px;
+}
+
